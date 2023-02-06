@@ -1,0 +1,75 @@
+.image-background{
+    backgroundImage: `url(./images/Texture.png), url(./images/Texture.png)`;
+}
+.grid {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px
+}
+.middle-grid {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+.innerGrid {
+    height: 100%;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+        "a a a a a a a a b b b b"
+        "c c c c c c k k b b b b"
+        "c c c c c c k k d d d d"
+        "e e e e e e e e d d d d"
+    ;
+}
+
+.a {
+    grid-area: a;
+}
+.b {
+    grid-area: b;
+}
+.c {
+    grid-area: c;
+}
+.d {
+    grid-area: d;
+}
+.e {
+    grid-area: e;
+}
+.k {
+    grid-area: k;
+}
+#balklongwaarde:hover{
+    border-end-end-radius: 80px;
+    background-color:#007FFF;
+
+}
+
+.zoom {
+    padding: 50px;
+    transition: transform .2s; /* Animation */
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+  
+  .zoom:hover {
+    transform: scale(1.7); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+  #border-redues {
+    
+    border-end-end-radius: 80px;
+  }
+  .image-containe{
+    background-image: url('./images/Brush.png');
+    background-repeat: no-repeat;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    
+  }
